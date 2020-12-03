@@ -1,0 +1,118 @@
+/*	--------------------------------------------------------------------------------
+	VERSION: 1.3
+	AUTOR: VELNEO
+	ULTIMA MODIFICACION: 15 Febrero 2018    
+-------------------------------------------------------------------------------- */
+
+    /*	-------------------------------------------------------------------------------
+    Flechas para moverse por los meses
+    -------------------------------------------------------------------------------- */
+    .glyphicon-chevron-left:before{content:"<"}
+    .glyphicon-chevron-right:before{content:">"}
+ 
+    /*	-------------------------------------------------------------------------------
+    Body: Tipo y tamaño de la fuente, color del nombre del mes y fondo del calendario
+    -------------------------------------------------------------------------------- */
+    body{
+        font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color:#757575;
+        background-color:#ffffff
+    }
+
+    /*	-------------------------------------------------------------------------------
+    Body: Tipos y tamaños de la fuente del mes
+    -------------------------------------------------------------------------------- */
+    h2,.h2{font-size:32px}
+    h2
+    {
+        font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight:200;
+        line-height:1.1;
+        color:inherit
+    }
+    
+     /*	-------------------------------------------------------------------------------
+    Hoy: Background del día actual
+    -------------------------------------------------------------------------------- */
+    .fc-today {
+        background: #E0E0E0;
+    }
+
+    /*	-------------------------------------------------------------------------------
+    Botones: Tamaño del borde, redondeo de esquinas,
+    -------------------------------------------------------------------------------- */
+
+    .btn{
+        font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+        border:1px solid transparent;
+        border-radius:4px;
+    }
+
+    /*	-------------------------------------------------------------------------------
+    Botones no seleccionados de inicio: flechas, Hoy, Semana, Día, Agenda
+    -------------------------------------------------------------------------------- */
+    .btn-default{
+        color:#757575;
+        background-color:#ffffff;
+        border-color:#e0e0e0
+    }
+
+    .btn-default:hover{
+        color:#ffffff;
+        background-color:#3F51B5;
+        border-color:#3F51B5
+    }
+
+    /*	-------------------------------------------------------------------------------
+    Indica si queremos poner como seleccionado (active) el botón por defecto (mes)
+    -------------------------------------------------------------------------------- */
+    .btn-default.active,
+    .open>.dropdown-toggle
+
+    /*	-------------------------------------------------------------------------------
+    Botón seleccionado por defecto: Mes
+    -------------------------------------------------------------------------------- */
+    .btn-default{
+        color:#ffffff;
+        background-color:#3F51B5;
+        border-color:#3F51B5
+    }
+    
+/*	------------------------------------------------------------------------------- 
+    Botones restantes
+    -------------------------------------------------------------------------------- */
+    
+    .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle)
+    {
+        border-radius:0
+    }
+    
+    /*	------------------------------------------------------------------------------- 
+    Primer botón del grupo (Mes, Seman, Día, Agenda)
+    -------------------------------------------------------------------------------- */
+    .btn:first-child:not(:last-child):not(.dropdown-toggle){border-bottom-right-radius:0;border-top-right-radius:0}
+
+    /*	------------------------------------------------------------------------------- 
+    Botones de flechas para moverse en el calendario
+    -------------------------------------------------------------------------------- */
+    .btn-group>.btn:last-child:not(:first-child),.btn-group>.dropdown-toggle:not(:first-child)
+    {
+        border-bottom-left-radius:0;
+        border-top-left-radius:0
+    }
+    .btn-group>.btn-group{float:left}.btn-group>
+    
+    /*	------------------------------------------------------------------------------- 
+    Tabla: Cabecera de los días de la semana
+    -------------------------------------------------------------------------------- */
+    .table-bordered>thead>tr>th,.table-bordered>thead>tr>th,table-bordered>tbody>tr>th,
+    .table-bordered>thead>tr>td,table-bordered>tbody>tr>td,
+    
+    /*	------------------------------------------------------------------------------- 
+    Tabla del calendario
+    -------------------------------------------------------------------------------- */
+    .table-bordered>tbody>tr>td,
+    .table-bordered>tfoot>tr>
+    td{
+        border:1px solid #E0E0E0
+    }
